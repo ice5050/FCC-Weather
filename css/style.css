@@ -9,13 +9,12 @@ textarea,
 
 body {
   font-weight: 300;
+
   box-sizing: border-box;
-  color: #FFFFFF;
+
+  color: #fff;
   background-color: #34495e;
-  background-image: linear-gradient(
-    90deg,
-    rgba(41,128,185,.40) 1%,
-    rgba(44,62,80,.40) 100%), url('');
+  background-image: linear-gradient(90deg, rgba(41,128,185,.40) 1%, rgba(44,62,80,.40) 100%), url('');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -23,38 +22,46 @@ body {
 }
 
 .wrapper {
+  display: table;
+
   width: 100%;
   height: 100vh;
-  display: table;
 }
 
 .weather {
-  width: 100%;
   display: table-cell;
+
+  width: 100%;
+
   vertical-align: middle;
 }
 
 .weather .location {
   font-size: 4.375em;
+
   text-align: center;
 }
 
 .weather .weather-icon {
   font-size: 5.625em;
+
   text-align: center;
 }
 
 .weather .temperature {
-  text-align: center;
   font-size: 4.375em;
+
+  text-align: center;
 }
 
 .weather .temperature .unit {
   font-size: .714em;
+
   vertical-align: text-top;
 }
 
 .weather .temperature .seperator {
   display: inline-block;
+
   margin: 0 10px;
 }
